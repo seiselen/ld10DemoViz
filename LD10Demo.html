@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <style type="text/css">
+      body{ font-family: sans-serif; }
+      h2 { margin-left: 50px; margin-bottom: 10px; }
+      h3 { margin: 0px; margin-left: 50px; }
+      path:hover{ fill-opacity: 0.5; }
+      div { position: relative; margin-left: 50px; }
+      .axis line { stroke: white; }
+      .axis text { fill: white; }    
+      .axis path { stroke: white; }
+      .tooltip {  position: absolute; text-align: center; margin-left: 0px; width: 64px; height: 36px; padding: 2px; font: 14px sans-serif; background: lightsteelblue; border: 0px; border-radius: 8px; pointer-events: none; }
+    </style> 
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="geoData.js"></script>
+    <script src="popData.js"></script>
+  </head> 
+  <body>
+    <h2>LD 10 Precincts - Voter Registration Stats (August 2018)</h2>
+    <h3>Note 1 : Map does not factor in parties other than REP/DEM</h3>
+    <h3>Note 2 : Dataset had no info for Pcts 117, 131, and 182</h3>
+    <div id="map"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
